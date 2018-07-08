@@ -14,8 +14,13 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 gem 'bootsnap', '>= 1.1.0', require: false
+gem "http"
 
 group :development, :test do
+  gem 'rspec-rails', '~> 3.7'
+  gem "guard"
+  gem "guard-rspec"
+  gem 'pry-rails'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
@@ -31,13 +36,6 @@ group :test do
   gem 'selenium-webdriver'
   gem 'chromedriver-helper'
   gem 'timecop'
-end
-
-group :development, :test do
-  gem 'rspec-rails', '~> 3.7'
-  gem "guard"
-  gem "guard-rspec"
-  gem 'pry-rails'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
