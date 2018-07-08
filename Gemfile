@@ -32,6 +32,9 @@ group :test do
   gem 'chromedriver-helper'
 end
 
-gem 'pry-rails', group: [:development, :test]
+group :development, :test do
+  gem 'rspec-rails', '~> 3.7'
+  gem 'pry-rails'
+end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
