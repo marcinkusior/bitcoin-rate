@@ -2,5 +2,5 @@
   <%= f.date_field :start, value: @filterForm.start %>
   <%= f.date_field :end, value: @filterForm.end %>
   <%= f.select :currency, Bitcoin::FilterForm.available_currencies %>
-  <%= f.submit 'submit' %>
+  <%= f.button :filter %>
 <% end %>

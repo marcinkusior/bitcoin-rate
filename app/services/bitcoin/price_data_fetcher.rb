@@ -10,15 +10,10 @@ module Bitcoin
     end
 
     def call
-      result = fetchData
-      JSON.parse(result.to_s)['bpi']
+      HTTP.get(API_URL, params: requestParams)
     end
 
     private
-
-    def fetchData
-      HTTP.get(API_URL, params: requestParams)
-    end
 
     def requestParams
       {

@@ -1,7 +1,8 @@
 class BitcoinController < ApplicationController
   def index
     @filterForm = Bitcoin::FilterForm.new(filter_form_params)
-    @bitcoin_price_data = Bitcoin::PriceDataFetcher.new(@filterForm).call
+    bitcoin_raw_data = Bitcoin::PriceDataFetcher.new(@filterForm).call
+    @bitcoin_price_data = Bitcoin::PriceDataProcessor.new(bitcoin_raw_data).call
   end
 
   private
