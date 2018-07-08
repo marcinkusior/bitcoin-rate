@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BitcoinRate</title>
+    
+    
+
+    <link rel="stylesheet" media="all" href="/assets/application-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" data-turbolinks-track="reload" />
+    <script src="/assets/application-21b0117523b699f8cc42617eae746e0be6c4ba9aae13e94d158aea160defa3ef.js" data-turbolinks-track="reload"></script>
+  </head>
+
+  <body>
+    <h1>Bitcoin#index</h1>
+<p>Find me in app/views/bitcoin/index.html.erb</p>
+<form class="new_bitcoin_filter_form" id="new_bitcoin_filter_form" action="/" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+  <input value="2018-06-05" type="date" name="bitcoin_filter_form[start]" id="bitcoin_filter_form_start" />
+  <input value="2018-07-05" type="date" name="bitcoin_filter_form[end]" id="bitcoin_filter_form_end" />
+  <select name="bitcoin_filter_form[currency]" id="bitcoin_filter_form_currency"><option selected="selected" value="USD">USD</option>
+<option value="EUR">EUR</option>
+<option value="PLN">PLN</option></select>
+  <button name="button" type="submit">filter</button>
+</form>
+
+{&quot;2018-06-05&quot;=&gt;7616.8913, &quot;2018-06-06&quot;=&gt;7655.9788, &quot;2018-06-07&quot;=&gt;7688.0038, &quot;2018-06-08&quot;=&gt;7616.1025, &quot;2018-06-09&quot;=&gt;7497.3438, &quot;2018-06-10&quot;=&gt;6765.8013, &quot;2018-06-11&quot;=&gt;6877.1825, &quot;2018-06-12&quot;=&gt;6548.33, &quot;2018-06-13&quot;=&gt;6299.5225, &quot;2018-06-14&quot;=&gt;6637.7388, &quot;2018-06-15&quot;=&gt;6410.7225, &quot;2018-06-16&quot;=&gt;6485.8688, &quot;2018-06-17&quot;=&gt;6443.6725, &quot;2018-06-18&quot;=&gt;6709.48, &quot;2018-06-19&quot;=&gt;6737.4138, &quot;2018-06-20&quot;=&gt;6758.3788, &quot;2018-06-21&quot;=&gt;6717.2025, &quot;2018-06-22&quot;=&gt;6053.8963, &quot;2018-06-23&quot;=&gt;6170.56, &quot;2018-06-24&quot;=&gt;6150.1888, &quot;2018-06-25&quot;=&gt;6247.4675, &quot;2018-06-26&quot;=&gt;6074.9175, &quot;2018-06-27&quot;=&gt;6132.5625, &quot;2018-06-28&quot;=&gt;5848.2638, &quot;2018-06-29&quot;=&gt;6203.9013, &quot;2018-06-30&quot;=&gt;6387.3063, &quot;2018-07-01&quot;=&gt;6347.8588, &quot;2018-07-02&quot;=&gt;6613.27, &quot;2018-07-03&quot;=&gt;6504.9263, &quot;2018-07-04&quot;=&gt;6584.7663, &quot;2018-07-05&quot;=&gt;6531.2}
+
+  </body>
+</html>

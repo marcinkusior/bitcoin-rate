@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BitcoinRate</title>
+    
+    
+
+    <link rel="stylesheet" media="all" href="/assets/application-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" data-turbolinks-track="reload" />
+    <script src="/assets/application-21b0117523b699f8cc42617eae746e0be6c4ba9aae13e94d158aea160defa3ef.js" data-turbolinks-track="reload"></script>
+  </head>
+
+  <body>
+    <h1>Bitcoin#index</h1>
+<p>Find me in app/views/bitcoin/index.html.erb</p>
+<form class="new_bitcoin_filter_form" id="new_bitcoin_filter_form" action="/" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+  <input value="2017-01-01" type="date" name="bitcoin_filter_form[start]" id="bitcoin_filter_form_start" />
+  <input value="2017-03-08" type="date" name="bitcoin_filter_form[end]" id="bitcoin_filter_form_end" />
+  <select name="bitcoin_filter_form[currency]" id="bitcoin_filter_form_currency"><option value="USD">USD</option>
+<option selected="selected" value="EUR">EUR</option>
+<option value="PLN">PLN</option></select>
+  <button name="button" type="submit">filter</button>
+</form>
+
+{&quot;2017-01-01&quot;=&gt;948.4, &quot;2017-01-02&quot;=&gt;972.6826, &quot;2017-01-03&quot;=&gt;990.2497, &quot;2017-01-04&quot;=&gt;1077.4056, &quot;2017-01-05&quot;=&gt;948.5469, &quot;2017-01-06&quot;=&gt;850.1852, &quot;2017-01-07&quot;=&gt;859.3865, &quot;2017-01-08&quot;=&gt;867.2529, &quot;2017-01-09&quot;=&gt;849.7113, &quot;2017-01-10&quot;=&gt;857.1896, &quot;2017-01-11&quot;=&gt;733.1564, &quot;2017-01-12&quot;=&gt;756.4967, &quot;2017-01-13&quot;=&gt;776.2294, &quot;2017-01-14&quot;=&gt;769.2299, &quot;2017-01-15&quot;=&gt;774.194, &quot;2017-01-16&quot;=&gt;783.3373, &quot;2017-01-17&quot;=&gt;844.4333, &quot;2017-01-18&quot;=&gt;831.5252, &quot;2017-01-19&quot;=&gt;842.4966, &quot;2017-01-20&quot;=&gt;833.1957, &quot;2017-01-21&quot;=&gt;860.0091, &quot;2017-01-22&quot;=&gt;864.5046, &quot;2017-01-23&quot;=&gt;847.3017, &quot;2017-01-24&quot;=&gt;825.2791, &quot;2017-01-25&quot;=&gt;831.7244, &quot;2017-01-26&quot;=&gt;856.8045, &quot;2017-01-27&quot;=&gt;858.6704, &quot;2017-01-28&quot;=&gt;860.2759, &quot;2017-01-29&quot;=&gt;853.1968, &quot;2017-01-30&quot;=&gt;859.9609, &quot;2017-01-31&quot;=&gt;896.2556, &quot;2017-02-01&quot;=&gt;916.985, &quot;2017-02-02&quot;=&gt;936.422, &quot;2017-02-03&quot;=&gt;943.7444, &quot;2017-02-04&quot;=&gt;958.1504, &quot;2017-02-05&quot;=&gt;940.2399, &quot;2017-02-06&quot;=&gt;953.321, &quot;2017-02-07&quot;=&gt;985.4668, &quot;2017-02-08&quot;=&gt;985.6902, &quot;2017-02-09&quot;=&gt;928.1984, &quot;2017-02-10&quot;=&gt;933.4325, &quot;2017-02-11&quot;=&gt;949.3397, &quot;2017-02-12&quot;=&gt;940.1764, &quot;2017-02-13&quot;=&gt;940.7982, &quot;2017-02-14&quot;=&gt;954.1432, &quot;2017-02-15&quot;=&gt;952.6512, &quot;2017-02-16&quot;=&gt;969.2414, &quot;2017-02-17&quot;=&gt;992.1077, &quot;2017-02-18&quot;=&gt;997.0854, &quot;2017-02-19&quot;=&gt;991.254, &quot;2017-02-20&quot;=&gt;1020.6343, &quot;2017-02-21&quot;=&gt;1066.5173, &quot;2017-02-22&quot;=&gt;1063.0239, &quot;2017-02-23&quot;=&gt;1113.9865, &quot;2017-02-24&quot;=&gt;1118.823, &quot;2017-02-25&quot;=&gt;1090.4205, &quot;2017-02-26&quot;=&gt;1117.3471, &quot;2017-02-27&quot;=&gt;1128.0421, &quot;2017-02-28&quot;=&gt;1126.3097, &quot;2017-03-01&quot;=&gt;1165.8608, &quot;2017-03-02&quot;=&gt;1200.121, &quot;2017-03-03&quot;=&gt;1215.1434, &quot;2017-03-04&quot;=&gt;1193.3356, &quot;2017-03-05&quot;=&gt;1204.2041, &quot;2017-03-06&quot;=&gt;1210.4907, &quot;2017-03-07&quot;=&gt;1166.3604, &quot;2017-03-08&quot;=&gt;1091.4648}
+
+  </body>
+</html>
