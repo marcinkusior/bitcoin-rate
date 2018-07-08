@@ -35,6 +35,8 @@ end
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.7'
+  gem "guard"
+  gem "guard-rspec"
   gem 'pry-rails'
 end
 
