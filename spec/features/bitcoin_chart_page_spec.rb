@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'rails_helper'
+
 feature 'Bitcoin chart page' do
 
   context 'with inital filters', type: :request do

@@ -7,7 +7,18 @@ module Bitcoin
     end
 
     def call
-      JSON.parse(raw_data.to_s)["bpi"]
+      data = JSON.parse(raw_data.to_s)['bpi']
+      process_data(data)
+    end
+
+    private
+
+    def process_data(data)
+      dataArray = []
+      data.each do |k, v|
+        dataArray << { date: k, value: v }
+      end
+      dataArray
     end
   end
 end

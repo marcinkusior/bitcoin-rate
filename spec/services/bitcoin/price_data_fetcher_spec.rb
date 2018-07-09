@@ -1,3 +1,5 @@
+require 'rails_helper'
+
 API_URL="https://api.coindesk.com/v1/bpi/historical/close.json"
 
 module Bitcoin
