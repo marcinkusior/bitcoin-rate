@@ -41,6 +41,8 @@ group :test do
   gem 'rspec-snapshot'
   gem 'selenium-webdriver'
   gem 'timecop'
+  gem 'vcr', '< 4.0'
+  gem 'webmock'
 end
 
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
