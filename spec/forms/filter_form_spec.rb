@@ -21,7 +21,7 @@ module Bitcoin
 
         it 'assigns default values' do
           expect(subject.end).to eq '2018-07-08'
-          expect(subject.start).to eq '2018-06-08'
+          expect(subject.start).to eq '2017-07-08'
           expect(subject.currency).to eq 'USD'
         end
       end

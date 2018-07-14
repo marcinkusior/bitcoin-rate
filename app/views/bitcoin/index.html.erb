@@ -1,5 +1,9 @@
-<h1>Bitcoin#index</h1>
-<p>Find me in app/views/bitcoin/index.html.erb</p>
-
-<%= render 'bitcoin/filter_form' %>
-<%= @bitcoin_price_data %>
+<div class="index">
+  <h1 class="index__title">Bitcoin Price Index</h1>
+  <%= render 'bitcoin/filter_form' %>
+  <%= render 'bitcoin/price_data_chart', data: @bitcoin_price_data %>
+  <p class="index__annotation">
+    bitcoin price data provided by
+    <a href="https://www.coindesk.com/api/" target="_blank">coindesk</a>
+  </p>
+</div>

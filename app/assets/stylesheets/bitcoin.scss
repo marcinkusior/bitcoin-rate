@@ -1,3 +1,18 @@
 // Place all the styles related to the Bitcoin controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.index {
+  font-family: sans-serif;
+  text-align: center;
+
+  &__title {
+    margin: 60px auto 40px;
+    font-weight: 200;
+  }
+
+  &__annotation {
+    font-size: 10px;
+    margin-top: 50px;
+  }
+}

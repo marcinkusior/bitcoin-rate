@@ -9,7 +9,7 @@ feature 'Bitcoin chart page' do
     before { Timecop.freeze now }
     after  { Timecop.return }
 
-    scenario 'page render correctly' do
+    scenario 'page renders correctly' do
       visit root_path
       expect(page.body).to match_snapshot("initial_bitcoin_chart_page")
     end

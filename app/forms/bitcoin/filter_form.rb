@@ -13,7 +13,7 @@ module Bitcoin
     def initialize(attributes)
       super(attributes)
 
-      self.start ||= (Date.today - 30).to_s
+      self.start ||= (Date.today - 365).to_s
       self.end ||= Date.today.to_s
       self.currency ||= 'USD'
     end
