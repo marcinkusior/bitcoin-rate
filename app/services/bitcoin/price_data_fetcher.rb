@@ -11,7 +11,7 @@ module Bitcoin
 
     def call
       @response = HTTP.get(API_URL, params: request_params)
-      response.status === 200
+      response.status == 200
     end
 
     private
