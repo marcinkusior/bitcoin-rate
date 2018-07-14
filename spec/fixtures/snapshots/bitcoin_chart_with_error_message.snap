@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BitcoinRate</title>
+    
+    
+
+    <link rel="stylesheet" media="all" href="/assets/application-68d8a51cf539e58b7d6ec71e88d8d7a1ab0b6690943480b194fbee8db8c1f130.css" data-turbolinks-track="reload" />
+    <script src="/assets/application-cfc2b0ee5f910321deee16ce665feed90ab4c393d873ea7615299d61f1623b50.js" data-turbolinks-track="reload"></script>
+  </head>
+
+  <body>
+    <div class="index">
+  <h1 class="index__title">Bitcoin Price Index</h1>
+  <div class="filter-form">
+  <form class="new_bitcoin_filter_form" id="new_bitcoin_filter_form" action="/" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+    <label class="filter-form__label" for="bitcoin_filter_form_start">from:</label>
+    <input value="2017-07-05" type="date" name="bitcoin_filter_form[start]" id="bitcoin_filter_form_start" />
+
+    <label class="filter-form__label" for="bitcoin_filter_form_end">to:</label>
+    <input value="2018-07-05" type="date" name="bitcoin_filter_form[end]" id="bitcoin_filter_form_end" />
+
+    <label class="filter-form__label" for="bitcoin_filter_form_currency">currency:</label>
+    <select class="filter-form__currency-select" name="bitcoin_filter_form[currency]" id="bitcoin_filter_form_currency"><option selected="selected" value="USD">USD</option>
+<option value="EUR">EUR</option>
+<option value="PLN">PLN</option></select>
+
+    <button name="button" type="submit">filter</button>
+</form></div>
+
+
+  <div class="error_message">Data could not be retrieved from server</div>
+
+  
+</div>
+
+  </body>
+</html>

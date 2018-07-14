@@ -7,9 +7,7 @@ module Bitcoin
     let(:params) { { start: '2018-08-01', end: '2018-08-08', currency: 'USD' } }
     let(:filterForm) { FilterForm.new(params) }
 
-
     subject { described_class.new(filterForm) }
-
 
     shared_examples 'fetcher assigning correct data to response' do
       it 'assigns correct value to response' do
@@ -19,11 +17,11 @@ module Bitcoin
     end
 
     describe '#call' do
-        before do
-          allow(HTTP).to receive(:get)
-            .with(described_class::API_URL, params: params)
-            .and_return(response)
-        end
+      before do
+        allow(HTTP).to receive(:get)
+          .with(described_class::API_URL, params: params)
+          .and_return(response)
+      end
 
       context 'when response is successful' do
         let(:response) { double(status: 200) }
