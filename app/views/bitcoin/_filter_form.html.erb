@@ -1,6 +1,14 @@
-<%= form_for(@filterForm, url: root_path, method: :get) do |f| %>
-  <%= f.date_field :start, value: @filterForm.start %>
-  <%= f.date_field :end, value: @filterForm.end %>
-  <%= f.select :currency, Bitcoin::FilterForm.available_currencies %>
-  <%= f.button :filter %>
-<% end %>
+<div class="filter-form">
+  <%= form_for(@filterForm, url: root_path, method: :get) do |f| %>
+    <%= f.label :start, 'from:', class: 'filter-form__label' %>
+    <%= f.date_field :start, value: @filterForm.start %>
+
+    <%= f.label :end, 'to:', class: 'filter-form__label' %>
+    <%= f.date_field :end, value: @filterForm.end %>
+
+    <%= f.label :currency, 'currency:', class: 'filter-form__label' %>
+    <%= f.select :currency, Bitcoin::FilterForm.available_currencies, {}, class: 'filter-form__currency-select' %>
+
+    <%= f.button :filter %>
+  <% end %>
+</div>

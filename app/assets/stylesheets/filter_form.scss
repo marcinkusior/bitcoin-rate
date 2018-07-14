@@ -1,0 +1,14 @@
+.filter-form {
+  position: relative;
+
+  &__label {
+    position: absolute;
+    top: -18px;
+    font-size: 12px;
+    font-weight: 200;
+  }
+
+  &__currency-select {
+    width: 90px;
+  }
+}
