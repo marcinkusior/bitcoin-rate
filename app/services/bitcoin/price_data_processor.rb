@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Bitcoin
   class PriceDataProcessor
     attr_reader :raw_data
@@ -14,11 +16,11 @@ module Bitcoin
     private
 
     def process_data(data)
-      dataArray = []
+      data_array = []
       data.each do |k, v|
-        dataArray << { date: k, value: v }
+        data_array << { date: k, value: v }
       end
-      dataArray
+      data_array
     end
   end
 end

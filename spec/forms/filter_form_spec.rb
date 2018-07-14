@@ -1,12 +1,13 @@
 # frozen_string_literal: true
+
 require 'rails_helper'
 
 module Bitcoin
   describe FilterForm do
     subject { described_class }
 
-    it '::available_currencies returns correct currencies' do
-      expect(subject.available_currencies).to eq ['USD', 'EUR', 'PLN']
+    it 'constant AVAILABLE_CURRENCIES returns correct currencies' do
+      expect(described_class::AVAILABLE_CURRENCIES).to eq %w[USD EUR PLN]
     end
 
     describe 'initialization' do

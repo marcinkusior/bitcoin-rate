@@ -1,8 +1,8 @@
 # frozen_string_literal: true
-API_URL="https://api.coindesk.com/v1/bpi/historical/close.json"
 
 module Bitcoin
   class PriceDataFetcher
+    API_URL = 'https://api.coindesk.com/v1/bpi/historical/close.json'
     attr_reader :filter_form
 
     def initialize(filter_form)
@@ -10,12 +10,12 @@ module Bitcoin
     end
 
     def call
-      HTTP.get(API_URL, params: requestParams)
+      HTTP.get(API_URL, params: request_params)
     end
 
     private
 
-    def requestParams
+    def request_params
       {
         start: filter_form.start,
         end: filter_form.end,

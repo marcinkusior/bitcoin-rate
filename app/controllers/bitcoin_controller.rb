@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 class BitcoinController < ApplicationController
   def index
-    @filterForm = Bitcoin::FilterForm.new(filter_form_params)
-    bitcoin_raw_data = Bitcoin::PriceDataFetcher.new(@filterForm).call
+    @filter_form = Bitcoin::FilterForm.new(filter_form_params)
+    bitcoin_raw_data = Bitcoin::PriceDataFetcher.new(@filter_form).call
     @bitcoin_price_data = Bitcoin::PriceDataProcessor.new(bitcoin_raw_data).call
   end
 

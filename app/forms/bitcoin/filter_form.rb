@@ -1,21 +1,18 @@
 # frozen_string_literal: true
-AVAILABLE_CURRENCIES = ['USD', 'EUR', 'PLN'].freeze
 
 module Bitcoin
   class FilterForm
     include ActiveModel::Model
+
+    AVAILABLE_CURRENCIES = %w[USD EUR PLN].freeze
     attr_accessor :start, :end, :currency
 
-    def self.available_currencies
-      AVAILABLE_CURRENCIES
-    end
-
     def initialize(attributes)
-      super(attributes)
+      super
 
-      self.start ||= (Date.today - 365).to_s
-      self.end ||= Date.today.to_s
-      self.currency ||= 'USD'
+      @start ||= (Date.today - 365).to_s
+      @end ||= Date.today.to_s
+      @currency ||= 'USD'
     end
   end
 end
