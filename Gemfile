@@ -14,7 +14,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 gem 'bootsnap', '>= 1.1.0', require: false
-gem "http"
+gem 'http'
+gem 'd3-rails'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.7'

@@ -1,0 +1,8 @@
+<div class="price-data-chart"></div>
+
+<script type="text/javascript">
+  const el = document.querySelector('.price-data-chart');
+  const data = <%= data.to_json.html_safe %>;
+
+  new LineGraph(el, data.slice(0)).createGraph();
+</script>

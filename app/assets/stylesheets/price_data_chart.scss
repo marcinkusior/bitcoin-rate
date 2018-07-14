@@ -1,0 +1,60 @@
+.price-data-chart {
+  margin: 0 auto;
+
+  width: 740px;
+  height: 400px;
+
+  .graph-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .graph-layer {
+    height: 100%;
+    width: 100%;
+  }
+
+  .focus-line,
+  .focus-circle,
+  .tooltip {
+    pointer-events: none;
+    rect {
+      fill: #e6e6e6;
+    }
+  }
+
+  .focus-line {
+    stroke: #e6e6e6;
+  }
+
+  .focus-circle {
+    fill: rgba(192, 192, 192, 0.4)
+  }
+
+  .axis-y {
+    .domain {
+      stroke: transparent;
+    }
+    .tick {
+      line {
+        stroke: #e6e6e6;
+      }
+    }
+  }
+
+  .axis-x {
+    .domain {
+      stroke: transparent;
+    }
+    .tick {
+      line {
+        stroke: #e6e6e6;
+      }
+    }
+  }
+}
