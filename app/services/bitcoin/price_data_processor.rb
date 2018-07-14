@@ -2,25 +2,26 @@
 
 module Bitcoin
   class PriceDataProcessor
-    attr_reader :raw_data
+    attr_reader :response, :data
 
-    def initialize(raw_data)
-      @raw_data = raw_data
+    def initialize(response)
+      @response = response
     end
 
     def call
-      data = JSON.parse(raw_data.to_s)['bpi']
-      process_data(data)
+      process_data
     end
 
     private
 
-    def process_data(data)
+    def process_data
       data_array = []
-      data.each do |k, v|
-        data_array << { date: k, value: v }
-      end
-      data_array
+      extract_data.each { |k, v| data_array << { date: k, value: v } }
+      @data = data_array
+    end
+
+    def extract_data
+      JSON.parse(response.to_s)['bpi']
     end
   end
 end

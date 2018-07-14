@@ -1,9 +1,7 @@
 <div class="index">
   <h1 class="index__title">Bitcoin Price Index</h1>
   <%= render 'bitcoin/filter_form', form: @filter_form %>
-  <%= render 'bitcoin/price_data_chart', data: @bitcoin_price_data %>
-  <p class="index__annotation">
-    bitcoin price data provided by
-    <a href="https://www.coindesk.com/api/" target="_blank">coindesk</a>
-  </p>
+
+  <%= flash[:error] && (render 'shared/error_message', message: flash[:error])   %>
+  <%= @bitcoin_price_data && (render 'bitcoin/price_data_chart', data: @bitcoin_price_data) %>
 </div>

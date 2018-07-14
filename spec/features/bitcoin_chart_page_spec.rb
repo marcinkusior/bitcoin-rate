@@ -3,7 +3,7 @@
 require 'rails_helper'
 
 feature 'Bitcoin chart page' do
-  context 'with inital filters', type: :request do
+  context 'with initial filters', type: :request do
     let(:now) { Time.new(2018, 7, 5) }
     before { Timecop.freeze now }
     after  { Timecop.return }
