@@ -38,7 +38,6 @@ end
 group :test do
   gem 'capybara', '>= 2.15', '< 4.0'
   gem 'chromedriver-helper'
-  gem 'rspec-snapshot'
   gem 'selenium-webdriver'
   gem 'timecop'
   gem 'vcr', '< 4.0'

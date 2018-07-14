@@ -208,8 +208,6 @@ GEM
       rspec-expectations (~> 3.7.0)
       rspec-mocks (~> 3.7.0)
       rspec-support (~> 3.7.0)
-    rspec-snapshot (0.1.1)
-      rspec (> 3.0.0)
     rspec-support (3.7.1)
     rubocop (0.58.1)
       jaro_winkler (~> 1.5.1)
@@ -301,7 +299,6 @@ DEPENDENCIES
   puma (~> 3.11)
   rails (~> 5.2.0)
   rspec-rails (~> 3.7)
-  rspec-snapshot
   rubocop
   sass-rails (~> 5.0)
   selenium-webdriver
